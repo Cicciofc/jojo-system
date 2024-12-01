@@ -1,31 +1,18 @@
-/**
- * jojo.js - Main script for the JoJo System
- * Author: Cicciofc
- */
+class JoJoActor extends Actor {
+    /** @override */
+    prepareData() {
+        super.prepareData();
 
-// Hook to initialize the system
-Hooks.once('init', () => {
-    console.log('JoJo System | Initializing the JoJo System');
+        // Initialize default data for the actor
+        const data = this.system; // System data is stored here
+        data.attributes = data.attributes || {};
 
-    // Define custom settings or sheet classes here
-    CONFIG.JojoSystem = {
-        attributes: ["hp", "standPower", "resolve", "speed"]
-    };
+        // Add default values if they don't exist
+        data.attributes.standPower = data.attributes.standPower ?? 5;
+        data.attributes.resolve = data.attributes.resolve ?? 3;
+        data.attributes.speed = data.attributes.speed ?? 2;
+    }
+}
 
-    // Example: Set up custom dice rolling logic
-    game.jojo = {
-        rollAttribute: (attribute) => {
-            const roll = new Roll('1d20 + @value', { value: CONFIG.JojoSystem.attributes[attribute] || 0 });
-            roll.roll({ async: false });
-            roll.toMessage({
-                flavor: `Rolling for ${attribute}!`,
-                speaker: ChatMessage.getSpeaker(),
-            });
-        }
-    };
-});
-
-// Hook to handle system readiness
-Hooks.once('ready', () => {
-    console.log('JoJo System | System is ready for use!');
-});
+// Register the custom actor class
+CONFIG.Actor.documentClass = JoJoActor;
