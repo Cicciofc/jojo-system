@@ -54,3 +54,25 @@
     border-radius: 5px;
 }
 
+.attributes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.attributes-table th {
+    background-color: #eee;
+    text-align: center;
+    padding: 5px;
+}
+
+.attributes-table td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.attributes-table input {
+    width: 60px;
+    text-align: center;
+}
