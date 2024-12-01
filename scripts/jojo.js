@@ -14,15 +14,23 @@ class JoJoActor extends Actor {
 
         const data = this.system;
 
-        // Initialize attributes if they don't exist
-        data.attributes = data.attributes || {};
-        data.attributes.standPower = data.attributes.standPower ?? 5;
-        data.attributes.resolve = data.attributes.resolve ?? 3;
-        data.attributes.speed = data.attributes.speed ?? 2;
+        // Initialize base stats
+        data.stats = data.stats || {};
+        data.stats.strength = data.stats.strength ?? 10;
+        data.stats.dexterity = data.stats.dexterity ?? 10;
+        data.stats.constitution = data.stats.constitution ?? 10;
+        data.stats.wisdom = data.stats.wisdom ?? 10;
+        data.stats.intelligence = data.stats.intelligence ?? 10;
+        data.stats.charisma = data.stats.charisma ?? 10;
 
-        // Initialize resources (health, power) if they don't exist
-        data.health = data.health || { value: 20, max: 20 };
-        data.power = data.power || { value: 10, max: 10 };
+        // Initialize stand stats
+        data.standStats = data.standStats || {};
+        data.standStats.power = data.standStats.power ?? 0;
+        data.standStats.precision = data.standStats.precision ?? 0;
+        data.standStats.durability = data.standStats.durability ?? 0;
+        data.standStats.speed = data.standStats.speed ?? 0;
+        data.standStats.range = data.standStats.range ?? 0;
+        data.standStats.standEnergy = data.standStats.standEnergy ?? 0;
     }
 }
 
