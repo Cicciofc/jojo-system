@@ -1,1 +1,56 @@
+/* jojo.css - Styles for the JoJo System
+   Author: Cicciofc */
+
+/* General sheet styling */
+.sheet {
+    background-color: #f3f3f3;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Headers */
+.sheet .header {
+    background: linear-gradient(135deg, #ffd700, #ff4500);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Attributes table */
+.sheet .attributes {
+    margin: 10px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sheet .attributes th,
+.sheet .attributes td {
+    border: 1px solid #444;
+    padding: 5px;
+    text-align: left;
+}
+
+.sheet .attributes th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Buttons */
+.button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
