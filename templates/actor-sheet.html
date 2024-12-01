@@ -42,30 +42,58 @@
         </div>
 
         <!-- Attributes Tab -->
-        <div class="tab attributes" data-group="primary" data-tab="attributes">
-            <h3>Attributes</h3>
-            <table class="attributes-table">
-                <tr>
-                    <th>Stand Power</th>
-                    <td>
-                        <input type="number" name="system.attributes.standPower" value="{{system.attributes.standPower}}" />
-                    </td>
-                </tr>
-                <tr>
-                    <th>Resolve</th>
-                    <td>
-                        <input type="number" name="system.attributes.resolve" value="{{system.attributes.resolve}}" />
-                    </td>
-                </tr>
-                <tr>
-                    <th>Speed</th>
-                    <td>
-                        <input type="number" name="system.attributes.speed" value="{{system.attributes.speed}}" />
-                    </td>
-                </tr>
-            </table>
-            <button class="roll-button" data-action="rollAttribute" data-attribute="standPower">Roll Stand Power</button>
-        </div>
+       <div class="tab attributes" data-group="primary" data-tab="attributes">
+    <h3>Attributes</h3>
+
+    <!-- Normal Stats -->
+    <table class="attributes-table">
+        <thead>
+            <tr>
+                <th>Strength</th>
+                <th>Dexterity</th>
+                <th>Constitution</th>
+                <th>Wisdom</th>
+                <th>Intelligence</th>
+                <th>Charisma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="number" name="system.stats.strength" value="{{system.stats.strength}}" /></td>
+                <td><input type="number" name="system.stats.dexterity" value="{{system.stats.dexterity}}" /></td>
+                <td><input type="number" name="system.stats.constitution" value="{{system.stats.constitution}}" /></td>
+                <td><input type="number" name="system.stats.wisdom" value="{{system.stats.wisdom}}" /></td>
+                <td><input type="number" name="system.stats.intelligence" value="{{system.stats.intelligence}}" /></td>
+                <td><input type="number" name="system.stats.charisma" value="{{system.stats.charisma}}" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Stand Stats -->
+    <table class="attributes-table">
+        <thead>
+            <tr>
+                <th>Power</th>
+                <th>Precision</th>
+                <th>Durability</th>
+                <th>Speed</th>
+                <th>Range</th>
+                <th>Stand Energy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="number" name="system.standStats.power" value="{{system.standStats.power}}" /></td>
+                <td><input type="number" name="system.standStats.precision" value="{{system.standStats.precision}}" /></td>
+                <td><input type="number" name="system.standStats.durability" value="{{system.standStats.durability}}" /></td>
+                <td><input type="number" name="system.standStats.speed" value="{{system.standStats.speed}}" /></td>
+                <td><input type="number" name="system.standStats.range" value="{{system.standStats.range}}" /></td>
+                <td><input type="number" name="system.standStats.standEnergy" value="{{system.standStats.standEnergy}}" /></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 
         <!-- Inventory Tab -->
         <div class="tab inventory" data-group="primary" data-tab="inventory">
