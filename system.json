@@ -2,8 +2,8 @@
   "id": "jojo-system",
   "version": "0.1.0",
   "title": "JoJo System",
-  "url": "https://github.com/Cicciofc/jojo-system/",
-  "description": "A custom tabletop RPG system inspired by JoJo's Bizarre Adventure.",
+  "url": "https://github.com/Cicciofc/jojo-system",
+  "description": "A custom tabletop RPG system inspired by JoJo's Bizarre Adventure. It includes unique mechanics to represent Stands, special abilities, and dynamic battles.",
   "license": "LICENSE.txt",
   "authors": [
     {
@@ -35,5 +35,8 @@
   "primaryTokenAttribute": "hp",
   "secondaryTokenAttribute": "energy",
   "manifest": "https://raw.githubusercontent.com/Cicciofc/jojo-system/main/system.json",
-  "download": "https://github.com/Cicciofc/jojo-system/archive/main.zip"
+  "download": "https://github.com/Cicciofc/jojo-system/archive/refs/heads/main.zip",
+  "readme": "https://github.com/Cicciofc/jojo-system/blob/main/README.md",
+  "bugs": "https://github.com/Cicciofc/jojo-system/issues",
+  "changelog": "https://github.com/Cicciofc/jojo-system/blob/main/CHANGELOG.md"
 }
